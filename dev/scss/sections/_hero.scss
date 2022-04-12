@@ -1,25 +1,36 @@
 #hero {
   margin-top: -15px;
  
+  @include md{
+    margin-top: -20px;
+  }
 
   >div {
 
 
     ul {
-
-      // display: grid;
-      // grid-template-columns: repeat(2, 1fr);
-      // grid-template-areas: "empty empty"
-      // "pink-e pink-e"
-      // "lie phone"
-      // "orange-e orange-e"
-      // "blueming blueming";
+@include md{
+   display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "empty empty"
+      "pink-e pink-e"
+      "lie phone"
+      "orange-e orange-e"
+      "blueming blueming";
+}
+   
 
       #empty {
         background-color: $mint;
         height: 200px;
         padding-top: 70px;
-        grid-area: empty;
+
+        @include md{
+           grid-area: empty;
+           height: 300px;
+        }
+       
+        
       }
 
       #pink-element {
@@ -41,6 +52,10 @@
         width: 100%;
         margin-top: -650px;
         grid-area: lie;
+
+        @include md{
+          margin-top: -100px;
+        }
 
       }
 

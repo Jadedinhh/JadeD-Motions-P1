@@ -486,11 +486,28 @@ header > div #nav-container {
 #hero {
   margin-top: -15px;
 }
+@media (min-width: 768px) {
+  #hero {
+    margin-top: -20px;
+  }
+}
+@media (min-width: 768px) {
+  #hero > div ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "empty empty" "pink-e pink-e" "lie phone" "orange-e orange-e" "blueming blueming";
+  }
+}
 #hero > div ul #empty {
   background-color: #D0E7CE;
   height: 200px;
   padding-top: 70px;
-  grid-area: empty;
+}
+@media (min-width: 768px) {
+  #hero > div ul #empty {
+    grid-area: empty;
+    height: 300px;
+  }
 }
 #hero > div ul #pink-element {
   background-image: url("../img/hero/pinkelement.png");
@@ -509,6 +526,11 @@ header > div #nav-container {
   width: 100%;
   margin-top: -650px;
   grid-area: lie;
+}
+@media (min-width: 768px) {
+  #hero > div ul #lieimg {
+    margin-top: -100px;
+  }
 }
 #hero > div ul #phoneimg {
   background-image: url("../img/hero/phone.png");
