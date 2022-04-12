@@ -1,3 +1,42 @@
 /* =============
     Header
 ============= */
+header {
+
+    display: grid;
+    grid-template-areas: ". header .";
+    grid-template-columns: 16px auto 16px;
+padding-top: 16px;
+
+
+
+    >div {
+        grid-area: header;
+        display: grid;
+        grid-template-columns: 60% auto;
+        grid-template-areas: "logo nav";
+       
+
+        #logo-container {
+            width: 90%;
+            grid-area: logo;
+
+            @include md {
+                width: 60%;
+            }
+
+            @include lg {
+                width: 50%;
+            }
+
+            @include xl {
+                width: 40%;
+            }
+        }
+
+        #nav-container {
+            grid-area: nav;
+        }
+    }
+
+}

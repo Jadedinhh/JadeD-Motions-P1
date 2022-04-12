@@ -423,9 +423,63 @@ textarea {
 /* =============
     Navigation
 ============= */
+#nav-container ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+#nav-container ul li a {
+  color: #1F79AF;
+  font-size: 1.25rem;
+}
+#nav-container ul li a:hover {
+  color: #F15B43;
+}
+@media (min-width: 768px) {
+  #nav-container ul li a {
+    font-size: 1.875rem;
+  }
+}
+
 /* =============
     Header
 ============= */
+header {
+  display: grid;
+  grid-template-areas: ". header .";
+  grid-template-columns: 16px auto 16px;
+  padding-top: 16px;
+}
+header > div {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 60% auto;
+  grid-template-areas: "logo nav";
+}
+header > div #logo-container {
+  width: 90%;
+  grid-area: logo;
+}
+@media (min-width: 768px) {
+  header > div #logo-container {
+    width: 60%;
+  }
+}
+@media (min-width: 992px) {
+  header > div #logo-container {
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  header > div #logo-container {
+    width: 40%;
+  }
+}
+header > div #nav-container {
+  grid-area: nav;
+}
+
 /* =============
     Footer
 ============= */

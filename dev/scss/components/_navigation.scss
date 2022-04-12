@@ -1,3 +1,31 @@
 /* =============
     Navigation
 ============= */
+#nav-container {
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+
+        li {
+
+            a {
+                color: $blue;
+                font-size: rem-calc(20);
+
+                &:hover {
+                    color: $orange;
+                }
+
+                @include md{
+                    font-size: rem-calc(30);
+                }
+            }
+
+
+        }
+    }
+
+}
