@@ -1,41 +1,66 @@
-#hero{
-    margin-top: -15px;
-    >div{
+#hero {
+  margin-top: -15px;
 
-        padding-top: 70px;
-        background-color: $mint;
+  >div {
 
-        ul{
-           
+   
+    
+    
 
-            #pink-element{
-               background-image: url("../img/hero/pinkelement.png");
-               background-position: center;
-             background-size: cover;
-               height: 400px;
-               width: 100%;
-               
-            }
+    ul {
 
-            #lieimg{
-                background-image: url("../img/hero/lie.png");
-                background-position: center;
-              background-size: cover;
-                height: 400px;
-                width: 100%;
-margin-top: -500px;
-            
-            }
+#empty{
+  background-color: $mint;
+  height: 100px;
+ padding-top: 70px;
+}
+      #pink-element {
+        background-image: url("../img/hero/pinkelement.png");
+        background-position: center;
+        background-size: cover;
+        height: 400px;
+        width: 100%;
 
-            #phoneimg{
-                background-image: url("../img/hero/phone.png");
-                background-position: center;
-              background-size: cover;
-                height: 600px;
-                width: 100%;
-            }
+      }
 
+      #lieimg {
+        background-image: url("../img/hero/lie.png");
+        background-position: center;
+        background-size: cover;
+        height: 400px;
+        width: 100%;
+        margin-top: -500px;
 
-        }
+      }
+
+      #phoneimg {
+        background-image: url("../img/hero/phone.png");
+        background-position: center;
+        background-size: cover;
+        height: 550px;
+        width: 100%;
+        margin-top: -200px;
+      }
+
+      #orange-element {
+        background-image: url("../img/hero/orangeelement.png");
+        background-position: center;
+        background-size: cover;
+        height: 400px;
+        width: 100%;
+
+      }
+
+      #blueming {
+        background-image: url("../img/hero/blueming.png");
+        background-position: center;
+        background-size: cover;
+        height: 800px;
+        width: 100%;
+        margin-top: -500px;
+
+      }
+
     }
+  }
 }
