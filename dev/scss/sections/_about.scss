@@ -1,0 +1,33 @@
+#about{
+
+    display: grid;
+    grid-template-columns: 30px auto 30px;
+    grid-template-areas: ". about .";
+
+    @include md{
+        grid-template-columns: 100px 540px auto;
+    }
+
+    @include md{
+        grid-template-columns: 150px 540px auto;
+    }
+
+
+    >div{
+grid-area: about;
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    color: $pink;
+    font-weight: 900;
+    font-size: rem-calc(90);
+}
+
+h5{
+    color: $blue;
+    font-size: rem-calc(32);
+    font-weight: 400;
+}
+    }
+
+}

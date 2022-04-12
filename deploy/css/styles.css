@@ -483,3 +483,32 @@ header > div #nav-container {
 /* =============
     Footer
 ============= */
+#about {
+  display: grid;
+  grid-template-columns: 30px auto 30px;
+  grid-template-areas: ". about .";
+}
+@media (min-width: 768px) {
+  #about {
+    grid-template-columns: 100px 540px auto;
+  }
+}
+@media (min-width: 768px) {
+  #about {
+    grid-template-columns: 150px 540px auto;
+  }
+}
+#about > div {
+  grid-area: about;
+}
+#about > div h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #F7B0BE;
+  font-weight: 900;
+  font-size: 5.625rem;
+}
+#about > div h5 {
+  color: #1F79AF;
+  font-size: 2rem;
+  font-weight: 400;
+}
