@@ -2,7 +2,9 @@
   margin-top: -15px;
  
   @include md{
-    margin-top: -20px;
+    margin-top: 10px;
+    margin-bottom: 200px;
+   
   }
 
   >div {
@@ -11,7 +13,7 @@
     ul {
 @include md{
    display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 55% auto;
       grid-template-areas: "empty empty"
       "pink-e pink-e"
       "lie phone"
@@ -27,7 +29,7 @@
 
         @include md{
            grid-area: empty;
-           height: 300px;
+           height: 250px;
         }
        
         
@@ -54,7 +56,8 @@
         grid-area: lie;
 
         @include md{
-          margin-top: -100px;
+          height: 350px;
+        
         }
 
       }
@@ -67,6 +70,13 @@
         width: 100%;
         margin-top: -300px;
         grid-area: phone;
+
+        @include md{
+          margin-top: -700px;
+          height: 700px;
+          padding-right: 50px;
+          margin-left: -100px;
+        }
       }
 
       #orange-element {
@@ -77,6 +87,10 @@
         width: 100%;
         margin-top: -250px;
         grid-area: orange-e;
+
+        @include md{
+          height: 500px;
+        }
 
       }
 
@@ -89,8 +103,21 @@
         margin-top: -600px;
         grid-area: blueming;
 
+        @include md{
+          height: 1250px;
+          margin-top: -850px;
+        }
+
       }
 
+    }
+
+    aside{
+      @include md{
+        background-color: $orange;
+        height: 500px;
+        margin-top: -700px;
+      }
     }
   }
 }

@@ -488,13 +488,14 @@ header > div #nav-container {
 }
 @media (min-width: 768px) {
   #hero {
-    margin-top: -20px;
+    margin-top: 10px;
+    margin-bottom: 200px;
   }
 }
 @media (min-width: 768px) {
   #hero > div ul {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 55% auto;
     grid-template-areas: "empty empty" "pink-e pink-e" "lie phone" "orange-e orange-e" "blueming blueming";
   }
 }
@@ -506,7 +507,7 @@ header > div #nav-container {
 @media (min-width: 768px) {
   #hero > div ul #empty {
     grid-area: empty;
-    height: 300px;
+    height: 250px;
   }
 }
 #hero > div ul #pink-element {
@@ -529,7 +530,7 @@ header > div #nav-container {
 }
 @media (min-width: 768px) {
   #hero > div ul #lieimg {
-    margin-top: -100px;
+    height: 350px;
   }
 }
 #hero > div ul #phoneimg {
@@ -541,6 +542,14 @@ header > div #nav-container {
   margin-top: -300px;
   grid-area: phone;
 }
+@media (min-width: 768px) {
+  #hero > div ul #phoneimg {
+    margin-top: -700px;
+    height: 700px;
+    padding-right: 50px;
+    margin-left: -100px;
+  }
+}
 #hero > div ul #orange-element {
   background-image: url("../img/hero/orangeelement.png");
   background-position: center;
@@ -550,6 +559,11 @@ header > div #nav-container {
   margin-top: -250px;
   grid-area: orange-e;
 }
+@media (min-width: 768px) {
+  #hero > div ul #orange-element {
+    height: 500px;
+  }
+}
 #hero > div ul #blueming {
   background-image: url("../img/hero/blueming.png");
   background-position: center;
@@ -558,6 +572,19 @@ header > div #nav-container {
   width: 100%;
   margin-top: -600px;
   grid-area: blueming;
+}
+@media (min-width: 768px) {
+  #hero > div ul #blueming {
+    height: 1250px;
+    margin-top: -850px;
+  }
+}
+@media (min-width: 768px) {
+  #hero > div aside {
+    background-color: #F15B43;
+    height: 500px;
+    margin-top: -700px;
+  }
 }
 
 #about {
