@@ -1,0 +1,41 @@
+#hero{
+    margin-top: -15px;
+    >div{
+
+        padding-top: 70px;
+        background-color: $mint;
+
+        ul{
+           
+
+            #pink-element{
+               background-image: url("../img/hero/pinkelement.png");
+               background-position: center;
+             background-size: cover;
+               height: 400px;
+               width: 100%;
+               
+            }
+
+            #lieimg{
+                background-image: url("../img/hero/lie.png");
+                background-position: center;
+              background-size: cover;
+                height: 400px;
+                width: 100%;
+margin-top: -500px;
+            
+            }
+
+            #phoneimg{
+                background-image: url("../img/hero/phone.png");
+                background-position: center;
+              background-size: cover;
+                height: 600px;
+                width: 100%;
+            }
+
+
+        }
+    }
+}

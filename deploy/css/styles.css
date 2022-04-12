@@ -483,6 +483,36 @@ header > div #nav-container {
 /* =============
     Footer
 ============= */
+#hero {
+  margin-top: -15px;
+}
+#hero > div {
+  padding-top: 70px;
+  background-color: #D0E7CE;
+}
+#hero > div ul #pink-element {
+  background-image: url("../img/hero/pinkelement.png");
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+}
+#hero > div ul #lieimg {
+  background-image: url("../img/hero/lie.png");
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  margin-top: -500px;
+}
+#hero > div ul #phoneimg {
+  background-image: url("../img/hero/phone.png");
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
+
 #about {
   display: grid;
   grid-template-columns: 30px auto 30px;
