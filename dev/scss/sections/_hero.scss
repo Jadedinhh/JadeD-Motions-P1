@@ -1,25 +1,35 @@
 #hero {
   margin-top: -15px;
+ 
 
   >div {
 
-   
-    
-    
 
     ul {
 
-#empty{
-  background-color: $mint;
-  height: 100px;
- padding-top: 70px;
-}
+      // display: grid;
+      // grid-template-columns: repeat(2, 1fr);
+      // grid-template-areas: "empty empty"
+      // "pink-e pink-e"
+      // "lie phone"
+      // "orange-e orange-e"
+      // "blueming blueming";
+
+      #empty {
+        background-color: $mint;
+        height: 200px;
+        padding-top: 70px;
+        grid-area: empty;
+      }
+
       #pink-element {
         background-image: url("../img/hero/pinkelement.png");
         background-position: center;
         background-size: cover;
-        height: 400px;
+        height: 550px;
         width: 100%;
+        margin-top: -200px;
+        grid-area: pink-e;
 
       }
 
@@ -29,7 +39,8 @@
         background-size: cover;
         height: 400px;
         width: 100%;
-        margin-top: -500px;
+        margin-top: -650px;
+        grid-area: lie;
 
       }
 
@@ -39,15 +50,18 @@
         background-size: cover;
         height: 550px;
         width: 100%;
-        margin-top: -200px;
+        margin-top: -300px;
+        grid-area: phone;
       }
 
       #orange-element {
         background-image: url("../img/hero/orangeelement.png");
         background-position: center;
         background-size: cover;
-        height: 400px;
+        height: 600px;
         width: 100%;
+        margin-top: -250px;
+        grid-area: orange-e;
 
       }
 
@@ -55,9 +69,10 @@
         background-image: url("../img/hero/blueming.png");
         background-position: center;
         background-size: cover;
-        height: 800px;
+        height: 700px;
         width: 100%;
-        margin-top: -500px;
+        margin-top: -600px;
+        grid-area: blueming;
 
       }
 
