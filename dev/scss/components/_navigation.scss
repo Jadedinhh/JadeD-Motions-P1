@@ -9,6 +9,11 @@
         align-items: center;
         height: 100%;
 
+        @include md {
+            align-items: flex-end;
+            margin-top: 2px;
+        }
+
         li {
 
             a {
@@ -19,7 +24,7 @@
                     color: $orange;
                 }
 
-                @include md{
+                @include md {
                     font-size: rem-calc(30);
                 }
             }
