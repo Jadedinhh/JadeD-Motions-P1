@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: 30px auto 30px;
     grid-template-areas: ". about .";
+    padding-bottom: 70px;
 
     @include md {
         grid-template-columns: 100px 540px auto;

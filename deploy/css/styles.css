@@ -431,7 +431,7 @@ textarea {
 }
 #nav-container ul li a {
   color: #1F79AF;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 #nav-container ul li a:hover {
   color: #F15B43;
@@ -488,7 +488,7 @@ header > div #nav-container {
 }
 @media (min-width: 768px) {
   #hero {
-    margin-top: 10px;
+    margin-top: -5px;
     margin-bottom: 200px;
   }
 }
@@ -497,6 +497,17 @@ header > div #nav-container {
     display: grid;
     grid-template-columns: 55% auto;
     grid-template-areas: "empty empty" "pink-e pink-e" "lie phone" "orange-e orange-e" "blueming blueming";
+  }
+}
+@media (min-width: 992px) {
+  #hero > div ul {
+    grid-template-columns: auto 45% 45% auto;
+    grid-template-areas: "empty empty empty empty" "pink-e pink-e pink-e pink-e" ". lie phone ." "orange-e orange-e orange-e orange-e" ". blueming blueming .";
+  }
+}
+@media (min-width: 1200px) {
+  #hero > div ul {
+    grid-template-columns: auto 40% 40% auto;
   }
 }
 #hero > div ul #empty {
@@ -510,6 +521,16 @@ header > div #nav-container {
     height: 250px;
   }
 }
+@media (min-width: 992px) {
+  #hero > div ul #empty {
+    height: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero > div ul #empty {
+    height: 400px;
+  }
+}
 #hero > div ul #pink-element {
   background-image: url("../img/hero/pinkelement.png");
   background-position: center;
@@ -518,6 +539,17 @@ header > div #nav-container {
   width: 100%;
   margin-top: -200px;
   grid-area: pink-e;
+}
+@media (min-width: 992px) {
+  #hero > div ul #pink-element {
+    height: 600px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero > div ul #pink-element {
+    height: 850px;
+    margin-top: -270px;
+  }
 }
 #hero > div ul #lieimg {
   background-image: url("../img/hero/lie.png");
@@ -531,6 +563,19 @@ header > div #nav-container {
 @media (min-width: 768px) {
   #hero > div ul #lieimg {
     height: 350px;
+  }
+}
+@media (min-width: 992px) {
+  #hero > div ul #lieimg {
+    margin-top: -700px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero > div ul #lieimg {
+    margin-top: -1100px;
+    height: 600px;
+    margin-left: -50px;
+    padding-left: 120px;
   }
 }
 #hero > div ul #phoneimg {
@@ -550,6 +595,18 @@ header > div #nav-container {
     margin-left: -100px;
   }
 }
+@media (min-width: 992px) {
+  #hero > div ul #phoneimg {
+    margin-top: -750px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero > div ul #phoneimg {
+    height: 850px;
+    margin-top: -920px;
+    margin-left: 50px;
+  }
+}
 #hero > div ul #orange-element {
   background-image: url("../img/hero/orangeelement.png");
   background-position: center;
@@ -564,6 +621,17 @@ header > div #nav-container {
     height: 500px;
   }
 }
+@media (min-width: 992px) {
+  #hero > div ul #orange-element {
+    margin-top: -300px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero > div ul #orange-element {
+    height: 650px;
+    margin-top: -380px;
+  }
+}
 #hero > div ul #blueming {
   background-image: url("../img/hero/blueming.png");
   background-position: center;
@@ -576,7 +644,14 @@ header > div #nav-container {
 @media (min-width: 768px) {
   #hero > div ul #blueming {
     height: 1250px;
-    margin-top: -850px;
+    margin-top: -800px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero > div ul #blueming {
+    height: 1750px;
+    margin-top: -1300px;
+    margin-left: 50px;
   }
 }
 @media (min-width: 768px) {
@@ -586,11 +661,17 @@ header > div #nav-container {
     margin-top: -700px;
   }
 }
+@media (min-width: 1200px) {
+  #hero > div aside {
+    margin-top: -800px;
+  }
+}
 
 #about {
   display: grid;
   grid-template-columns: 30px auto 30px;
   grid-template-areas: ". about .";
+  padding-bottom: 70px;
 }
 @media (min-width: 768px) {
   #about {

@@ -2,7 +2,7 @@
   margin-top: -15px;
  
   @include md{
-    margin-top: 10px;
+    margin-top: -5px;
     margin-bottom: 200px;
    
   }
@@ -11,7 +11,7 @@
 
 
     ul {
-      
+
 @include md{
    display: grid;
       grid-template-columns: 55% auto;
@@ -20,6 +20,19 @@
       "lie phone"
       "orange-e orange-e"
       "blueming blueming";
+}
+
+@include lg{
+  grid-template-columns: auto 45% 45% auto;
+  grid-template-areas: "empty empty empty empty"
+  "pink-e pink-e pink-e pink-e"
+  ". lie phone ."
+  "orange-e orange-e orange-e orange-e"
+  ". blueming blueming .";
+}
+
+@include xl{
+  grid-template-columns: auto 40% 40% auto;
 }
    
 
@@ -31,6 +44,14 @@
         @include md{
            grid-area: empty;
            height: 250px;
+        }
+
+        @include lg{
+          height: 300px;
+        }
+
+        @include xl{
+          height: 400px;
         }
        
         
@@ -44,6 +65,15 @@
         width: 100%;
         margin-top: -200px;
         grid-area: pink-e;
+
+        @include lg{
+          height: 600px;
+        }
+
+        @include xl{
+          height: 850px;
+          margin-top: -270px;
+        }
 
       }
 
@@ -59,6 +89,16 @@
         @include md{
           height: 350px;
         
+        }
+        @include lg{
+          margin-top: -700px;
+        }
+
+        @include xl{
+          margin-top: -1100px;
+          height: 600px;
+          margin-left: -50px;
+          padding-left: 120px;
         }
 
       }
@@ -78,6 +118,16 @@
           padding-right: 50px;
           margin-left: -100px;
         }
+
+        @include lg{
+          margin-top: -750px;
+        }
+
+        @include xl{
+          height: 850px;
+          margin-top: -920px;
+          margin-left: 50px;
+        }
       }
 
       #orange-element {
@@ -93,6 +143,15 @@
           height: 500px;
         }
 
+        @include lg{
+          margin-top: -300px;
+        }
+
+        @include xl{
+          height: 650px;
+          margin-top: -380px;
+        }
+
       }
 
       #blueming {
@@ -106,7 +165,13 @@
 
         @include md{
           height: 1250px;
-          margin-top: -850px;
+          margin-top: -800px;
+        }
+
+        @include xl{
+          height: 1750px;
+         margin-top: -1300px;
+         margin-left: 50px;
         }
 
       }
@@ -118,6 +183,10 @@
         background-color: $orange;
         height: 500px;
         margin-top: -700px;
+      }
+
+      @include xl{
+        margin-top: -800px;
       }
     }
   }
