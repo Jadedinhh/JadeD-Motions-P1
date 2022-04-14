@@ -11,6 +11,7 @@
 
 
     ul {
+      
 @include md{
    display: grid;
       grid-template-columns: 55% auto;
