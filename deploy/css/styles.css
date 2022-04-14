@@ -498,6 +498,9 @@ header > div #nav-container {
     margin-bottom: 200px;
   }
 }
+#hero > div {
+  z-index: -500;
+}
 @media (min-width: 768px) {
   #hero > div ul {
     display: grid;
