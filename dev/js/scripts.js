@@ -6,14 +6,14 @@ import { MotionPathHelper } from "gsap/MotionPathHelper";
 
 gsap.registerPlugin(GSDevTools, MotionPathPlugin, DrawSVGPlugin, MotionPathHelper);
 
-const mainTL= gsap.timeline({repeatDelay:0.2, repeat:3});
+const mainTL= gsap.timeline({repeatDelay:0.5, repeat:3});
 
 function changeBlue(){
 
     let tl = gsap.timeline();
-    tl.to("#flower", {duration:0.5, fill:"#1D4995"})
+    tl.to("#flower", {duration:0.5, fill:"#1D4995"}, "start")
     .to("#petal1",{duration:0.5, y:"-80", x:"-20"})
-    .to("#mouth", {duration:0.5, rotation:360})
+    .to("#mouth", {duration:0.5, rotation:180, x:"100", y:"90"}, "start")
     .to("#petal1", {duration: 0.5, y:"0", x:"0"});
 
 
@@ -24,9 +24,9 @@ function changeBlue(){
 function changePink(){
 
     let tl = gsap.timeline();
-    tl.to("#flower", {duration:0.5, fill:"#F7B0BE"})
+    tl.to("#flower", {duration:0.5, fill:"#F7B0BE"}, "go")
     .to("#petal2",{duration:0.5, y:"-60", x:"80"})
-    .to("#mouth", {duration:0.5})
+    .to("#mouth", {duration:0.5, rotation:360, x:"0", y:"0"}, "go")
     .to("#petal2", {duration: 0.5, y:"0", x:"0"});
 
 
@@ -37,9 +37,9 @@ function changePink(){
 
 function changeOcean(){
     let tl = gsap.timeline();
-    tl.to("#flower", {duration:0.5, fill:"#1F79AF"})
+    tl.to("#flower", {duration:0.5, fill:"#1F79AF"}, "run")
     .to("#petal3",{duration:0.5, y:"60", x:"80"})
-    .to("#mouth", {duration:0.5, rotation:360})
+    .to("#mouth", {duration:0.5, rotation:180, x:"100", y:"90"}, "run")
     .to("#petal3", {duration: 0.5, y:"0", x:"0"});
 
 
@@ -48,9 +48,9 @@ function changeOcean(){
 
 function changeOrange(){
     let tl = gsap.timeline();
-    tl.to("#flower", {duration:0.5, fill:"#F15B43"})
+    tl.to("#flower", {duration:0.5, fill:"#F15B43"}, "let")
     .to("#petal4",{duration:0.5, y:"80", x:"-60"})
-    .to("#mouth", {duration:0.5, rotation:360})
+    .to("#mouth", {duration:0.5, rotation:360, x:"0", y:"0"}, "let")
     .to("#petal4", {duration: 0.5, y:"0", x:"0"});
 
 
@@ -59,11 +59,12 @@ function changeOrange(){
 
 function changeMint(){
     let tl = gsap.timeline();
-    tl.to("#flower", {duration:0.5, fill:"#D0E7CE"})
+    tl.to("#flower", {duration:0.5, fill:"#D0E7CE"}, "move")
     .to("#petal5",{duration:0.5, y:"60", x:"-80"})
-    .to("#mouth", {duration:0.5, rotation:360})
+    .to("#mouth", {duration:0.5, rotation:180, x:"100", y:"90"}, "move")
     .to("#petal5", {duration: 0.5, y:"0", x:"0"})
-    .to("#flower", {duration:0.5, fill:"#F15B43"});
+    .to("#flower", {duration:0.5, fill:"#F15B43"}, "restart")
+    .to("#mouth", {duration:0.5, rotation:360, x:"0", y:"0"}, "restart");
     
 
 
