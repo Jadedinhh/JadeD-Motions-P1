@@ -3,11 +3,11 @@ import { GSDevTools } from "gsap/GSDevTools";
 
 gsap.registerPlugin(GSDevTools);
 
-const mainTL= gsap.timeline({repeat:3, repeatDelay:1});
+const mainTL= gsap.timeline({repeat:-1});
 
 function changeBlue(){
 
-    let tl = gsap.timeline();
+    let tl = gsap.timeline({delay:0.5});
     tl.to("#flower", {duration:0.5, fill:"#1D4995"}, "start")
     .to("#petal1",{duration:0.5, y:"-80", x:"-20"})
     .to("#mouth", {duration:0.5, rotation:180, x:"100", y:"90"}, "start")
