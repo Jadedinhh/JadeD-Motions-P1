@@ -10,8 +10,9 @@ function changeBlue(){
 
     let tl = gsap.timeline({delay:0.5});
     tl
+    .to("#petal2", {duration:0.1, fill:"#F15B43"})
     .to("#petal1",{duration:0.5,y:"-80", x:"-20",fill:"#1D4995"})
-    .to("#flower", {duration:0.5, fill:"#1D4995"}, "start")
+    .to(".pe", {duration:0.7, fill:"#1D4995"}, "start")
     .to("#mouth", {duration:0.5, morphSVG:"#mouth2"}, "start")
     .to("#lefteye", {duration:0.5, morphSVG:"#left2"}, "start")
     .to("#righteye", {duration:0.5, morphSVG:"#right2"}, "start")
@@ -28,11 +29,11 @@ function changePink(){
     let tl = gsap.timeline();
     tl
     .to("#petal2",{duration:0.5, y:"-60", x:"80",fill:"#F7B0BE"})
-    .to("#flower", {duration:0.5, fill:"#F7B0BE"}, "go")
+    .to(".pe", {duration:0.7, fill:"#F7B0BE"}, "go")
     .to("#petal1", {duration:0.5, fill:"#F7B0BE"}, "go")
     .to("#mouth", {duration:0.5, morphSVG:"#mouth3"}, "go")
-    .to("#left", {duration:0.5, morphSVG:"#left3"}, "go")
-    .to("#right", {duration:0.5, morphSVG:"#right3"}, "go")
+    .to("#lefteye", {duration:0.5, morphSVG:"#left3"}, "go")
+    .to("#righteye", {duration:0.5, morphSVG:"#right3"}, "go")
     .to("#petal2", {duration: 0.5, y:"0", x:"0",ease:"power1.out"});
 
 
@@ -45,10 +46,10 @@ function changeOcean(){
     let tl = gsap.timeline();
     tl
     .to("#petal3",{duration:0.5, y:"60", x:"80", fill:"#1F79AF"})
-    .to("#flower", {duration:0.5, fill:"#1F79AF"}, "run")
+    .to(".pe", {duration:0.7, fill:"#1F79AF"}, "run")
     .to("#mouth", {duration:0.5, morphSVG:"#mouth4"}, "run")
-    .to("#left", {duration:0.5, morphSVG:"#left4"}, "run")
-    .to("#right", {duration:0.5, morphSVG:"#right4"}, "run")
+    .to("#lefteye", {duration:0.5, morphSVG:"#left4"}, "run")
+    .to("#righteye", {duration:0.5, morphSVG:"#right4"}, "run")
     .to("#petal3", {duration: 0.5, y:"0", x:"0", ease:"power1.out"});
 
 
@@ -59,10 +60,10 @@ function changeOrange(){
     let tl = gsap.timeline();
     tl
     .to("#petal4",{duration:0.5, y:"80", x:"-60",fill:"#F15B43"})
-    .to("#.pe", {duration:0.5, fill:"#F15B43"}, "let")
+    .to(".pe", {duration:0.7, fill:"#F15B43"}, "let")
     .to("#mouth", {duration:0.5, morphSVG:"#mouth5"}, "let")
-    .to("#left", {duration:0.5, morphSVG:"#left5"}, "let")
-    .to("#right", {duration:0.5, morphSVG:"#right5"}, "let")
+    .to("#lefteye", {duration:0.5, morphSVG:"#left5"}, "let")
+    .to("#righteye", {duration:0.5, morphSVG:"#right5"}, "let")
     .to("#petal4", {duration: 0.5, y:"0", x:"0", ease:"power1.out"});
 
 
@@ -73,11 +74,15 @@ function changeMint(){
     let tl = gsap.timeline();
     tl
     .to("#petal5",{duration:0.5, y:"60", x:"-80", fill:"#D0E7CE"})
-    .to("#flower", {duration:0.5, fill:"#D0E7CE"}, "move")
+    .to(".pe", {duration:0.7, fill:"#D0E7CE"}, "move")
     .to("#mouth", {duration:0.5, morphSVG:"#mouth6"}, "move")
-    .to("#left", {duration:0.5, morphSVG:"#left6"}, "move")
-    .to("#right", {duration:0.5, morphSVG:"#right6"}, "move")
-    .to("#petal5", {duration: 0.5, y:"0", x:"0", ease:"power1.out"});
+    .to("#lefteye", {duration:0.5, morphSVG:"#left6"}, "move")
+    .to("#righteye", {duration:0.5, morphSVG:"#right6"}, "move")
+    .to("#petal5", {duration: 0.5, y:"0", x:"0", ease:"power1.out"})
+    .to(".pe", {duration:0.7, fill:"#F15B43"}, "restart")
+.to("#mouth", {duration:0.5, morphSVG:"#mouth7"}, "restart")
+.to("#lefteye", {duration:0.5, morphSVG:"#left7"}, "restart")
+.to("#righteye", {duration:0.5, morphSVG:"#right7"}, "restart");
     
 
 
@@ -85,14 +90,14 @@ function changeMint(){
 }
 
 
-function reStartFlower(){
-let tl = gsap.timeline();
+// function reStartFlower(){
+// let tl = gsap.timeline();
 
-tl.to("#flower", {duration:0.5, fill:"#F15B43"}, "restart")
-.to("#mouth", {duration:0.5, morphSVG:"#mouth7"}, "move")
-.to("#left", {duration:0.5, morphSVG:"#left7"}, "move")
-.to("#right", {duration:0.5, morphSVG:"#right7"}, "move");
-}
+// tl.to(".pe", {duration:0.5, fill:"#F15B43"}, "restart")
+// .to("#mouth", {duration:0.5, morphSVG:"#mouth7"}, "restart")
+// .to("#lefteye", {duration:0.5, morphSVG:"#left7"}, "restart")
+// .to("#righteye", {duration:0.5, morphSVG:"#right7"}, "restart");
+// }
 
 
 mainTL.add(changeBlue())
@@ -100,7 +105,7 @@ mainTL.add(changeBlue())
 .add(changeOcean())
 .add(changeOrange())
 .add(changeMint())
-.add(reStartFlower())
+// .add(reStartFlower())
 
 ;
 
