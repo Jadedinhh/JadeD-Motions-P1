@@ -435,6 +435,24 @@ textarea {
   align-items: center;
   height: 100%;
 }
+#loader-container > div #mouth2, #loader-container > div #eyes2 {
+  visibility: hidden;
+}
+#loader-container > div #mouth3, #loader-container > div #eyes3 {
+  visibility: hidden;
+}
+#loader-container > div #mouth4, #loader-container > div #eyes4 {
+  visibility: hidden;
+}
+#loader-container > div #mouth5, #loader-container > div #eyes5 {
+  visibility: hidden;
+}
+#loader-container > div #mouth6, #loader-container > div #eyes6 {
+  visibility: hidden;
+}
+#loader-container > div #mouth7, #loader-container > div #eyes7 {
+  visibility: hidden;
+}
 
 .gs-dev-tools {
   z-index: 550;
